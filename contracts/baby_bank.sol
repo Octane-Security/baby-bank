@@ -27,6 +27,8 @@ contract baby_bank {
         uint256 gift = 0;
         uint256 lucky = 0;
 
+        // this is just a comment
+
         if (block.number > withdraw_time[msg.sender]) {
             lucky =
                 uint256(keccak256(abi.encodePacked(block.number, msg.sender))) %
